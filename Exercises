@@ -1,0 +1,24 @@
+CS251 T1: Programming 2 (Ga)
+1.15: Exercises:Control Flow and Input/Output
+You should attempt all of the following exercises.
+
+In each case you should write your solution in Java using the IntelliJ IDE. Where you are asked to write a program rather than simply create a method, you should write a complete working program which has a class with appropriate constructor and methods (including a main method).
+
+You MUST maintain a complete repository of all of your work (it would be good if you could do this in GIT repository that you can share with your tutors - but not essential) as you WILL be asked to show this at various points throughout the year
+
+
+1. Continuing where you left off in task 1.8, change your main method to accept the radius (as a double) from the user and pass it as a parameter to the constructor when creating a new Circle.
+
+2. Now create a new method called setColor() that accepts an argument of type double and returns void. Where the value of the argument is less than 10 it should set the circle color to red, when the value is greater than (or equal to) 10 but less than 50 it should set the color to amber and for values of 50 or more it should set the color to green. Create a new method called getColor() that returns the color.
+
+3. Amend the setColor method so that it returns a different colour for each of the following ranges (of the value of the accepted argument) 0-5, 6-10, 11-15, 16-20, 21-25, >25. (You choose the colours for each range)
+
+4. Add a new constructor to allow radius and color of the circle to be set, the color should be set using setColor
+
+5. Update your main method so that it outputs the radius and colour of each instance of the Circle class.
+
+6. Write a new program which reads in the names of two teams and the number of goals each have scored in a game. The program should output the name of the winner, or output “draw”, depending on the score.
+
+7. Write a new program which reads in a username and a password, and expects the username to be “brian” and the password to be “spam”. The program should print a welcome message if these are both correct.
+
+8. An electricity bill charges the first 100 units used at 26.7p per unit. Any units above the first 100 are charged at 15.6p. Write a new program to read a number of units and output the cost in pence.
