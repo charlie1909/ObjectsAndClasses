@@ -25,7 +25,7 @@ public boolean isOdd(int i){
         return isOdd;
     }
 
-3. Create a Java class named Circle which should have an appropriate constructor to reflect the following scenario. The Circle class should have two intance varibales, radius (of type double) and color (of type string). At instantiation these variables should have default values of 1.8 and red respectively.
+3. Create a Java class named Circle which should have an appropriate constructor to reflect the following scenario. The Circle class should have two intance varibales, radius (of type double) and color (of type string). At instantiation these variables should have default values of 1.8 and red respectively. - see class ObjectsAndClassessApp and Circle
 
 
 
