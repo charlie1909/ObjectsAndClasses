@@ -1,3 +1,7 @@
+import java.lang.reflect.Array;
+import java.sql.SQLOutput;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class ObjectsAndClassesApp {
@@ -5,12 +9,6 @@ public class ObjectsAndClassesApp {
 
     public static void main(String[] args){
 
-
-        //Question 1.15-1
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Please enter a radius");
-        double radius = scanner.nextDouble();
-        Circle userCircle = new Circle(radius);
 
         //question 1-2
         ObjectsAndClasses objectsAndClasses= new ObjectsAndClasses();
@@ -30,8 +28,19 @@ public class ObjectsAndClassesApp {
         double rad = newCircle.getRadius();
         System.out.println("Radius: " + rad + ", Color: " + col);
         double area = newCircle.getArea();
-        System.out.print("Area: " + area);
+        System.out.println("Area: " + area);
 
+        Circle circle = new Circle(10, 10);
+
+        ArrayList<Circle> circles = new ArrayList<>();
+        circles.add(circle);
+        circles.add(newCircle);
+        circles.add(plainCircle);
+        for(int i =0; i< circles.size(); i++){
+            double radius = circles.get(i).getRadius();
+            String color = circles.get(i).getColor();
+            System.out.println("Circle " + i + "- Radius: " + radius + " , color: "+ color);
+        }
     }
 
 }
