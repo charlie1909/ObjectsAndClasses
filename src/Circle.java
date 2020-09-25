@@ -1,5 +1,6 @@
-public class Circle {
+import java.util.Scanner;
 
+public class Circle {
 
     //question 3-6
     private double radius;
@@ -9,6 +10,26 @@ public class Circle {
         radius = 1.8;
         color = "Red";
     }
+
+    //Question 1.15-2
+    public void setColor(double value){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter a number");
+        double color = scanner.nextDouble();
+
+        if(color<10){
+            this.color = "RED";
+        }else if(color>= 10 && color <50){
+            this.color="Amber";
+        }else{
+            this.color = "Green";
+        }
+    }
+
+    public String getColor() {
+        return color;
+    }
+
 
     public Circle (double radius){
         this.radius = radius;
@@ -24,7 +45,4 @@ public class Circle {
         return area;
     }
 
-    public String getColor() {
-        return color;
-    }
 }
